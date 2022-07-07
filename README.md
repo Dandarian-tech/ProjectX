@@ -1,2 +1,0 @@
-# ProjectX
-E-Commerce Website
