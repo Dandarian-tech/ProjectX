@@ -44,7 +44,6 @@ p{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 76.5vh;
     justify-content: space-around;
 }
 .col-2{
@@ -83,12 +82,18 @@ p{
     margin-top: 10px;
 }
 .col-3{
+    background: rgb(241, 240, 240);
+    padding: 10px;
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    transition: transform 0.8s;
 }
 .col-3 img{
     width: 100%;
+}
+.col-3:hover{
+    transform: translateY(-8px);
 }
 .small-container{
     max-width: 1400px;
@@ -97,11 +102,61 @@ p{
     padding-right: 25px;
 }
 .col-4{
+    background: rgb(241, 240, 240);
+    padding: 10px;
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
+    margin: 1px;
     margin-bottom: 50px;
+    transition: transform 0.8s;
 }
 .col-4 img{
     width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: orange;
+} 
+.col-4:hover{
+    transform: translateY(-8px);
+}
+.offer .col-2{
+    padding: 20px;
+    font-size: medium;
+}
+.offer{
+    background: radial-gradient(#fff,#a4b3f7);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 30px;
+}
+small{
+    color: #555;
 }
