@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;500;600;700&display=swap"
  rel="stylesheet">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-    <title>Login & Registration | G-Mall</title>
+    <title>My Cart | G-Mall</title>
 </head>
 <body>
   
@@ -31,50 +31,22 @@
                 <li><a href="account.html">Account</a></li>
             </ul> 
         </nav>
-        <a href="cart.html"><img src="images/cart.jpg" alt="cart" width="30px" height="30px"></a>
+        <img src="images/cart.jpg" alt="cart" width="30px" height="30px">
         <img src="images/menu.png" class="menu-icon"
         onclick="menutoggle()">
     </div>
 </div>
 
 
-<!-----account page------->
 
-<div class="account-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <img src="images/Shopping2.webp" width="100%">
-            </div>
 
-            <div class="col-2">
-                <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Login</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="Indicator">
-                    </div>
 
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forgot Password</a>
-                    </form>
-    
-                    <form id="RegForm">
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Email">
-                        <input type="email" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
-                    </form>
 
-                </div>
-            </div>
 
-        </div>
-    </div>
-</div>
+
+
+
+
 
 
 
@@ -141,32 +113,6 @@
         }
     } 
 </script>
-
-<!------javascript for account.html----->
-
-
-<script>
-
-var LoginForm = document.getElementById("LoginForm");
-var RegForm = document.getElementById("RegForm");
-var Indicator = document.getElementById("Indicator");
-
-    function register(){
-
-        RegForm.style.transform = "translateX(0px)";
-        LoginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-    }
-
-    function login(){
-
-        LoginForm.style.transform = "translateX(300px)";
-        RegForm.style.transform = "translateX(300px)";
-        Indicator.style.transform = "translateX(0px)";
-}
-
-</script>
-
 
 </body>
 </html>

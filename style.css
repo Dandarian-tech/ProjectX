@@ -48,6 +48,9 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.row a:hover{
+    text-decoration: none;
+}
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
@@ -333,6 +336,44 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
+
+
+/*---------item details-----------*/
+.row1{
+    width: 80%;
+    margin-left: 9%;
+}
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(241, 240, 240);
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#qqq{
+    background: rgb(241, 240, 240);
+}
+
 
 
 
