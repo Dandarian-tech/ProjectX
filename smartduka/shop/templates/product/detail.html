@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% comment %} {% block content %}
+<div class="product-detail">
+    <div class="img">
+        <img class="product_img" src="{{product.image.url}}">
+    </div>
+    <div>
+        <h1>{{product.name}}</h1>
+        <p class="price"> {{product.price}}</p>
+        <form action="{% url 'cart:cart_add' product.id%} " method='post'>
+            {{cart_product_form}}
+            {% csrf_token %}
+            <input type='submit' value="Add to cart">
+        </form>
+    </div>
+
+</div>
+{% endblock content %} {% endcomment %}
+
+{% block content %}
+    <div class="product-detail">
+        
+       <div class="product-img">
+           <img src="{{product.image.url}}">
+       </div>
+       <div class="product-info">
+            home 
+            <p class='product-name p-name'>
+            {{product.name}}
+            </p>
+            <p class='price'>
+            Ksh. {{product.price}}
+            </p>
+     
+            <i>{{product.feature}}</i>
+            <form action="{% url 'cart:cart_add' product.id%}" method='post'>
+                {% csrf_token %}
+                {{cart_product_form}}
+                <input class="btn detail-btn" type="submit" value="Add To Cart">
+            </form>
+            <span class="info-links">
+                <a class='home' href="#">
+                    Description
+                </a>
+                <a href="#">
+                    What's in the box
+                </a>
+            </span>
+            <p class="desc">
+                {{product.description}}
+            </p>
+        </div>
+      
+    </div>
+
+{% endblock content %}
