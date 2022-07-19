@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script src="https://kit.fontawesome.com/a66b1c59ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <title>{% block title %}G shop{% endblock title %}</title>
+</head>
+<body>
+    <div class="header">    
+        <div class="container">
+           {% include 'navbar.html' %}
+           
+            
+        </div>
+        
+    </div>
+        {% block content %}
+        {% endblock content%}
+    <div>
+        {% include 'footer.html' %}
+    </div>
+</body>
+</html>
