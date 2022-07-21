@@ -5,6 +5,9 @@
 <h3>activate your virtualenv.</h3>
 <p>run:<br><br> 
   source env/bin/activate<br>
+  If you’re using Windows, use the command env\Scripts\activate (without the
+word source ) to activate the virtual environment. If you’re using PowerShell, you
+might need to capitalize Activate .
   <br>
   in your shell</p>
 <h3>Install required files</h3>
